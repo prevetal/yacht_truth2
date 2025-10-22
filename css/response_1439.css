@@ -1,0 +1,146 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 18px;
+        --font_size_title: 40px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding-block: 24px;
+    }
+
+
+    header .menu
+    {
+        gap: 40px;
+    }
+
+
+    header .menu_item .btn
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form
+    {
+        --form_columns_offset: 24px;
+        --form_line_offset: 24px;
+        --form_input_height: 48px;
+        --form_textarea_height: 120px;
+    }
+
+
+    .form select ~ .arr
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding-block: 92px;
+    }
+
+
+    .first_section .data
+    {
+        margin-top: 60px;
+    }
+
+
+    .first_section .btn
+    {
+        width: 340px;
+        height: 48px;
+    }
+
+
+
+    /*------------------
+        Bottom block
+    ------------------*/
+    .bottom_block .order .form
+    {
+        width: calc(50% - 60px);
+    }
+
+
+    .bottom_block .order .form .title
+    {
+        font-size: 48px;
+    }
+
+
+    .bottom_block .order .form .desc
+    {
+        margin-bottom: 28px;
+
+        font-size: var(--font_size);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-block: 20px 80px;
+    }
+
+
+    footer .logo img
+    {
+        width: 68px;
+    }
+
+
+    footer .info
+    {
+        width: calc(100% - 108px);
+    }
+
+
+    footer .menu
+    {
+        font-size: 14px;
+        line-height: 36px;
+
+        gap: 16px;
+    }
+
+
+    footer .text
+    {
+        margin-top: 28px;
+
+        font-size: 14px;
+    }
+
+
+    footer .bottom
+    {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,232 @@
+@media print,
+(max-width: 1023px)
+{
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        position: absolute;
+    }
+
+
+    header .menu
+    {
+        gap: 24px;
+    }
+
+
+    header .menu_item .btn
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        position: relative;
+
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
+
+    .first_section .logo
+    {
+        display: none;
+    }
+
+
+    .first_section .mob_logo
+    {
+        display: block;
+    }
+
+
+    .first_section .data
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 60px;
+    }
+
+
+    .first_section .title
+    {
+        text-align: center;
+    }
+
+
+    .first_section .btn
+    {
+        display: block;
+
+        width: 300px;
+        margin-inline: auto;
+    }
+
+
+
+    /*------------
+        Blocks
+    ------------*/
+    .blocks .data
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------------
+        Our advantage
+    -------------------*/
+    .our_advantage
+    {
+        padding-block: 0 40px;
+    }
+
+
+    .our_advantage .cont
+    {
+        padding: 0;
+    }
+
+
+    .our_advantage .logo
+    {
+        display: none;
+    }
+
+
+    .our_advantage .image
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .our_advantage .title
+    {
+        text-align: center;
+    }
+
+
+
+    /*----------------------
+        How we serve you
+    ----------------------*/
+    .how_we_serve_you .cont
+    {
+        padding: 0;
+    }
+
+
+    .how_we_serve_you .title
+    {
+        margin-bottom: 32px;
+
+        text-align: center;
+    }
+
+
+
+    /*--------------------
+        How we operate
+    --------------------*/
+    .how_we_operate .title
+    {
+        text-align: center;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .cont
+    {
+        padding: 0;
+    }
+
+
+    .projects .title
+    {
+        margin-bottom: 32px;
+        padding-inline: var(--cont_padding);
+
+        text-align: center;
+    }
+
+
+
+    /*------------------
+        Bottom block
+    ------------------*/
+    .bottom_block .order .image
+    {
+        width: calc(100% + var(--cont_padding_double));
+        margin-inline: calc(var(--cont_padding) * -1);
+        margin-bottom: 40px;
+    }
+
+
+    .bottom_block .order .form
+    {
+        width: 100%;
+    }
+
+
+    .bottom_block .order .form .title
+    {
+        font-size: 36px;
+
+        text-align: center;
+    }
+
+
+    .bottom_block .order .form .desc
+    {
+        text-align: center;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-block: 40px;
+    }
+
+
+    footer .data
+    {
+        width: 100%;
+    }
+
+
+    footer .menu
+    {
+        font-size: 12px;
+
+        gap: 20px;
+    }
+
+
+    footer .text
+    {
+        margin-top: 20px;
+
+        font-size: 12px;
+    }
+
+
+    footer .bottom
+    {
+        font-size: 12px;
+    }
+}

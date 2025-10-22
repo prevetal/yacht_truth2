@@ -1,0 +1,215 @@
+@media print,
+(max-width: 1899px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 22px;
+        --font_size_title: 48px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu_item .btn
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form
+    {
+        --form_columns_offset: 28px;
+        --form_line_offset: 28px;
+        --form_input_height: 52px;
+        --form_textarea_height: 124px;
+        --form_input_padding_inline: 19px;
+        --form_textarea_padding_block: 19px;
+        --form_textarea_padding_inline: 19px;
+    }
+
+
+    .form select ~ .arr
+    {
+        width: 18px;
+        height: 18px;
+    }
+
+
+    .form .submit_btn
+    {
+        width: calc(50% - var(--form_columns_offset) * .5);
+        height: 48px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .first_section
+    {
+        padding-bottom: 80px;
+    }
+
+
+    .first_section .logo img
+    {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .first_section .desc
+    {
+        margin-top: 24px;
+    }
+
+
+    .first_section .btn
+    {
+        width: 400px;
+        height: 52px;
+        margin-top: 24px;
+    }
+
+
+
+    /*-------------------
+        Our advantage
+    -------------------*/
+    .our_advantage
+    {
+        padding-block: 16px 40px;
+    }
+
+
+    .our_advantage .image
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .our_advantage .logo img
+    {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .our_advantage .desc
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*----------------------
+        How we serve you
+    ----------------------*/
+    .how_we_serve_you .col
+    {
+        width: 100%;
+
+        gap: 20px;
+    }
+
+
+    .how_we_serve_you .col + .col
+    {
+        margin-top: 20px;
+    }
+
+
+    .how_we_serve_you .item .desc
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .item .info
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*------------------
+        Bottom block
+    ------------------*/
+    .bottom_block .order .form
+    {
+        width: calc(50% - 80px);
+    }
+
+
+    .bottom_block .order .form .title
+    {
+        font-size: 52px;
+    }
+
+
+    .bottom_block .order .form .desc
+    {
+        margin-bottom: 32px;
+
+        font-size: 20px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-block: 20px 120px;
+    }
+
+
+    footer .logo img
+    {
+        width: 80px;
+    }
+
+
+    footer .info
+    {
+        width: calc(100% - 120px);
+    }
+
+
+    footer .menu
+    {
+        font-size: 15px;
+        line-height: 40px;
+
+        gap: 20px;
+    }
+
+
+    footer .text
+    {
+        margin-top: 40px;
+
+        font-size: 15px;
+    }
+
+
+    footer .bottom
+    {
+        font-size: 15px;
+    }
+}
