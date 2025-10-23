@@ -55,12 +55,6 @@
     /*-----------------
         Main slider
     -----------------*/
-    .first_section
-    {
-        padding-bottom: 80px;
-    }
-
-
     .first_section .logo img
     {
         max-width: 100%;
@@ -86,12 +80,6 @@
     /*-------------------
         Our advantage
     -------------------*/
-    .our_advantage
-    {
-        padding-block: 16px 40px;
-    }
-
-
     .our_advantage .image
     {
         margin-bottom: 60px;

@@ -34,6 +34,12 @@
     }
 
 
+    .form .nice-select.open ~ .arr
+    {
+        top: 8px;
+    }
+
+
     .form .submit_btn
     {
         height: 40px;
@@ -112,7 +118,6 @@
     -------------------*/
     .first_section
     {
-        padding-top: 88px;
         padding-bottom: 60px;
     }
 

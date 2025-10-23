@@ -23,14 +23,27 @@
 
 
 
+    /*------------
+        Blocks
+    ------------*/
+    .blocks
+    {
+        padding-top: 80px;
+    }
+
+
+    .blocks > .col
+    {
+        width: 100%;
+    }
+
+
+
     /*-------------------
         First section
     -------------------*/
     .first_section
     {
-        position: relative;
-
-        padding-top: 100px;
         padding-bottom: 80px;
     }
 

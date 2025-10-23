@@ -166,13 +166,13 @@ input[type=number]
 ::selection
 {
     color: var(--light_color);
-    background: var(--primary_color);
+    background: var(--light_color);
 }
 
 ::-moz-selection
 {
     color: var(--light_color);
-    background: var(--primary_color);
+    background: var(--light_color);
 }
 
 
@@ -197,7 +197,7 @@ html.custom_scroll ::-webkit-scrollbar
 
 html.custom_scroll ::-webkit-scrollbar-thumb
 {
-    background-color: var(--primary_color);
+    background-color: var(--light_color);
 }
 
 
@@ -273,20 +273,6 @@ button
     max-width: calc(var(--content_width) + var(--cont_padding_double));
     margin-inline: auto;
     padding-inline: var(--cont_padding);
-}
-
-
-
-.block
-{
-    margin-bottom: var(--outside_gap);
-}
-
-
-
-.modal_btn > *
-{
-    pointer-events: none;
 }
 
 
@@ -751,7 +737,7 @@ header .langs a
     margin-block: auto;
 
     z-index: 3;
-    transition: transform .2s linear;
+    transition: .2s linear;
     transform: rotate(-45deg);
     pointer-events: none;
 
@@ -772,7 +758,9 @@ header .langs a
 
 .form .nice-select.open ~ .arr
 {
-    transform: rotate(180deg);
+    top: 10px;
+
+    transform: rotate(135deg);
 }
 
 
@@ -811,38 +799,27 @@ header .langs a
 -------------------*/
 .first_section
 {
-    position: fixed;
-    inset: 0;
+    position: sticky;
+    top: var(--cont_padding);
 
-    padding-block: 124px;
-
-    background: var(--bg_default);
+    padding-bottom: 40px;
 }
 
 
 .first_section .cont
 {
-    position: relative;
-
     display: flex;
     flex-direction: column;
-
-    z-index: 3;
 }
 
 
 .first_section .logo
 {
-    position: sticky;
-    top: var(--cont_padding);
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
-
-    width: 50%;
 
     gap: var(--cont_padding_double);
 }
@@ -873,7 +850,7 @@ header .langs a
 .first_section .data
 {
     width: 668px;
-    max-width: calc(50% - 40px);
+    max-width: calc(100% - 40px);
     margin-top: 100px;
 }
 
@@ -912,9 +889,42 @@ header .langs a
 }
 
 
-.first_section .bg
+
+/*------------
+    Blocks
+------------*/
+.blocks
 {
-    position: absolute;
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-top: var(--cont_padding);
+}
+
+
+.blocks > .col
+{
+    position: relative;
+
+    width: 50%;
+
+    z-index: 3;
+}
+
+
+.blocks .data
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.blocks > .bg
+{
+    position: fixed;
     inset: 0;
 
     display: block;
@@ -925,70 +935,12 @@ header .langs a
 
 
 
-/*------------
-    Blocks
-------------*/
-.blocks
-{
-    position: relative;
-
-    z-index: 10;
-    pointer-events: none;
-}
-
-
-.blocks .block
-{
-    position: relative;
-}
-
-
-.blocks .block.dark_bg:before
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    display: block;
-
-    width: 50%;
-    height: 100%;
-
-    content: '';
-    z-index: 1;
-    pointer-events: none;
-
-    background: #041531;
-}
-
-
-.blocks .block .cont
-{
-    position: relative;
-
-    z-index: 3;
-}
-
-
-.blocks .data
-{
-    display: flex;
-    flex-direction: column;
-
-    width: calc(50% - 20px);
-    margin-left: auto;
-
-    pointer-events: auto;
-}
-
-
-
 /*-------------------
     Our advantage
 -------------------*/
 .our_advantage
 {
-    padding-block: 8px 40px;
+    padding-block: 0 40px;
 }
 
 
@@ -1301,9 +1253,7 @@ header .langs a
 
     padding-block: 40px 0;
 
-    z-index: 10;
-
-    background: #041531;
+    z-index: 3;
 }
 
 
@@ -1326,8 +1276,8 @@ header .langs a
 .bottom_block .order
 {
     display: flex;
-    align-content: center;
-    align-items: center;
+    align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -1353,6 +1303,9 @@ header .langs a
 
 .bottom_block .order .form
 {
+    position: sticky;
+    top: var(--cont_padding);
+
     width: calc(50% - 100px);
 }
 
@@ -1387,9 +1340,7 @@ footer
 
     padding-block: 20px 200px;
 
-    z-index: 10;
-
-    background: #041531;
+    z-index: 3;
 }
 
 
